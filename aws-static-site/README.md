@@ -22,7 +22,7 @@ Use Pulumi locally (no cloud backend):
 pulumi login --local
 ```
 
-Create a new Pulumi stack
+Create a new Pulumi stack called `dev`
 
 ```
 pulumi stack init dev

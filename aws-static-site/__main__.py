@@ -18,7 +18,8 @@ bucket_public_access_block = aws.s3.BucketPublicAccessBlock(
     block_public_acls=False,
     ignore_public_acls=False,
     block_public_policy=False,
-    restrict_public_buckets=False
+    restrict_public_buckets=False,
+    opts=pulumi.ResourceOptions(depends_on=[bucket])
 )
 
 # Output the bucket website endpoint
@@ -40,7 +41,9 @@ bucket_policy = aws.s3.BucketPolicy("bucket-policy",
         }}
     ]
 }}
-"""))
+"""),
+opts=pulumi.ResourceOptions(depends_on=[bucket_public_access_block])
+)
 
 # Upload website content to the bucket
 content_dir = "html"  # Path to your website content
