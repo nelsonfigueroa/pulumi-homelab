@@ -2,7 +2,7 @@ Example Pulumi code that pulls Docker images and runs them locally. This is from
 
 ## Running
 
-Set up a new Pulumi project:
+Set up a new Pulumi project and stack:
 
 ```
 pulumi new python -y
