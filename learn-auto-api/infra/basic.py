@@ -132,7 +132,7 @@ if __name__ == "__main__":
         project="api",
         stackd="dev",
         dirname="api",
-        request="timezone", # this should be req, doesn't affect the actual demo though but it shows up in python linter or IDE, create PR https://github.com/pulumi/docs/blob/7048fdefa66930194e50baae8e9a370ddb5e154d/content/tutorials/embedding-pulumi/building-api/index.md?plain=1#L161
+        req="timezone",
     )
     spin_venv(context["dirname"])
     stack = set_stack(context_var=context)
