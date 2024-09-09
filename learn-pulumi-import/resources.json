@@ -1,0 +1,14 @@
+{
+    "resources": [
+        {
+            "type": "docker:index/container:Container",
+            "name": "backend-dev",
+            "id": "a964bd431b6999ad6438671fd4a7318a97be147367b4be5e317d233c49912c01"
+        },
+        {
+            "type": "docker:index/container:Container",
+            "name": "mongo-dev",
+            "id": "d9ca0729fc93eb4e12964935402125998cac29619155d795d604767a555d6eb1"
+        }
+    ]
+}
