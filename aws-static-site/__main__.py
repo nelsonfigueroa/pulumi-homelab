@@ -92,3 +92,4 @@ cloudfront_distribution = aws.cloudfront.Distribution("cloudfront-distribution",
 
 # Output the CloudFront distribution URL
 pulumi.export("cloudfront_url", cloudfront_distribution.domain_name)
+pulumi.export("cloudfront_urn", cloudfront_distribution.urn)
