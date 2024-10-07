@@ -1,0 +1,11 @@
+name: pulumi-personal-access-token
+description: testing creation of pulumi tokens via IaC
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python
