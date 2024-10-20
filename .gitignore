@@ -170,3 +170,5 @@ cython_debug/
 
 # node bloatware
 node_modules
+
+.DS_Store
