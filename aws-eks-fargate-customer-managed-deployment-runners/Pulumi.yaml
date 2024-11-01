@@ -1,0 +1,11 @@
+name: aws-eks-fargate-customer-managed-deployment-runners
+description: customer-managed deployment runners on EKS + Fargate
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: kubernetes-aws-python
