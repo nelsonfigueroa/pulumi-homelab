@@ -16,7 +16,7 @@ metadata:
 
 apiVersion: v1
 data:
-  PULUMI_AGENT_TOKEN: pul-312b56aa6c248f5b7bc8b5b85897dd944520588d
+  PULUMI_AGENT_TOKEN: <REPLACE ME>
 kind: Secret
 metadata:
   name: agent-secret
